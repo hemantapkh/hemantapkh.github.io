@@ -115,9 +115,9 @@ comments:
   # Giscus options › https://giscus.app
   giscus:
     repo: "hemantapkh/hemantapkh.github.io"
-    repo_id: "R_kgDOMjgAFQ"
+    repo_id: "R_kgDOMoC6Zg"
     category: "Posts"
-    category_id: "DIC_kwDOMjgAFc4ChoP1"
+    category_id: "DIC_kwDOMoC6Zs4Ch6o2"
     mapping: "og:title" # optional, default to 'pathname'
     strict: # optional, default to '0'
     input_position: # optional, default to 'bottom'
