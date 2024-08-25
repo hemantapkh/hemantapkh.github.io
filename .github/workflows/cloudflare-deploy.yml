@@ -1,0 +1,48 @@
+name: "Cloudflare Pages"
+
+on:
+  workflow_dispatch:
+  push:
+    paths-ignore:
+      - .gitignore
+      - README.md
+      - LICENSE
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: cloudflare-pages
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll b -d dist
+        env:
+          JEKYLL_ENV: "cloudflare-pages"
+
+      - name: Test site
+        run: |
+          bundle exec htmlproofer dist \
+            \-\-disable-external \
+            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+
+      - name: Deploy to Cloudflare Pages
+        shell: bash
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_PROJECT_NAME: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+        run: |
+          npx wrangler pages deploy dist --project-name=$CLOUDFLARE_PROJECT_NAME --branch main --commit-dirty=true > /dev/null
+          echo "🚀 Pages deployed successfully"
