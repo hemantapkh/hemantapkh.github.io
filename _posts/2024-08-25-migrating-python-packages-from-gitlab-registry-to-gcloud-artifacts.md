@@ -53,7 +53,7 @@ export REPO_URL=<REPOSITORY_URL>
 
 ## Download the Packages
 
-The net step is to download the packages from GitLab. Below is the python script that I used. 
+The next step is to download the packages from GitLab. Below is the python script that I used. 
 
 Set the `GITLAB_USERNAME`, `GITLAB_TOKEN` and `GITLAB_ORG_NAME` environment variables.
 
