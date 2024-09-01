@@ -1,6 +1,6 @@
 ---
-title: How I Discovered a stored Self-XSS Vulnerability in Seedr.cc and Its Impact
-description: This blog shares my journey of uncovering a Self-XSS vulnerability in Seedr.cc and how the vulnerability, typically considered less severe, can still have significant impacts.
+title: Discovering a Stored XSS Vulnerability in Seedr.cc
+description: This blog details my journey of uncovering a stored XSS vulnerability in Seedr.cc
 author: hemantapkh
 date: 2024-09-01 02:41:18 +0000
 categories: [Cybersecurity]
@@ -61,7 +61,7 @@ After adding this magnet link on my Seedr account, my XSS vector was permanently
 
 ## Impact
 
-This vulnerability could have severe implications, including account takeovers via malicious JavaScript injections. Although the XSS vulnerability I discovered is a type of Self-XSS, meaning it executes only in the context of the user who submits the payload, it can still be exploited to target other users.
+This vulnerability could have severe implications, including account takeovers via malicious JavaScript injections. While the XSS vulnerability I discovered is a type of Self-XSS, meaning it executes only in the context of the user who submits the payload, it can still be exploited to target other users.
 
 Imagine someone injecting the similar script into a magnet link and sharing it with unsuspecting victims:
 
