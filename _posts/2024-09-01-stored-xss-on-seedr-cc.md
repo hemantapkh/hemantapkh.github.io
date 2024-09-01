@@ -2,7 +2,7 @@
 title: How I Discovered a stored Self-XSS Vulnerability in Seedr.cc and Its Impact
 description: This blog shares my journey of uncovering a Self-XSS vulnerability in Seedr.cc and how the vulnerability, typically considered less severe, can still have significant impacts.
 author: hemantapkh
-date: 2024-08-25 15:48:00 +0000
+date: 2024-09-01 02:41:18 +0000
 categories: [Cybersecurity]
 tags: [security, XSS, hacking]
 pin: false
