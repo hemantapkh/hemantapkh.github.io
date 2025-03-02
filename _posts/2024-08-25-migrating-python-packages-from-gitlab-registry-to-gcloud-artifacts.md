@@ -1,5 +1,5 @@
 ---
-title: How We Migrated Our Internal Python Packages From GitLab to Gcloud Artifacts
+title: Migrating Internal Python Packages From GitLab to Gcloud Artifacts
 description: This blog shares the journey of our migration from GitLab registry to Google Cloud Artifacts
 author: hemantapkh
 date: 2024-08-25 15:48:00 +0000
@@ -13,7 +13,7 @@ image:
 ---
 
 
-At [Docsumo](https://docsumo.com), we recently transitioned our version control system from GitLab to GitHub. One challenge that emerged during this migration was the lack of native support for [Python packages in GitHub](https://github.com/orgs/community/discussions/8542). To address this, we opted to move our internal packages to Google Cloud Artifacts.
+At [Docsumo](https://docsumo.com), we recently transitioned our version control system from GitLab to GitHub. One challenge that emerged during this migration was the lack of native support for [Python packages in GitHub](https://github.com/orgs/community/discussions/8542). To address this, and given our infrastructure's alignment with Google Cloud, we transitioned our packages to Google Cloud Artifacts.
 
 Here are the detailed steps I followed to successfully migrate around 250 versions of internal packages from GitLab python registry to Google Cloud Artifacts.
 
