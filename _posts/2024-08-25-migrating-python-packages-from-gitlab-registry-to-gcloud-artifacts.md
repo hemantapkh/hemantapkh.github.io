@@ -9,7 +9,7 @@ pin: false
 math: false
 mermaid: false
 image:
-  path: /assets/img/posts/migrating-python-packages-from-gitlab-to-gcloud/thumbnail.png
+  path: https://assets.hemantapkh.com/blog/migrating-python-packages-from-gitlab-to-gcloud/thumbnail.png
 ---
 
 
@@ -43,7 +43,7 @@ https://<PROJECT_LOCATION>-python.pkg.dev/<PROJECT_ID>/<REGISTRY_NAME>/
 
 You can also copy the repository URL from the Google Cloud Console interface.
 
-![IMAGE](/assets/img/posts/migrating-python-packages-from-gitlab-to-gcloud/copy-repo-url.png)
+![IMAGE](https://assets.hemantapkh.com/blog/migrating-python-packages-from-gitlab-to-gcloud/copy-repo-url.png)
 
 Next, set the repository URL in an environment variable, as it will be required later to upload the packages.
 
