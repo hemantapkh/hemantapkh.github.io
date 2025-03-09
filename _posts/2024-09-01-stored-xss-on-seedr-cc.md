@@ -33,7 +33,7 @@ In this post, we'll focus on my discovery of a stored Self-XSS vulnerability in 
 
 ## Discovering XSS in Seedr
 
-**December 1, 2020** While browsing the seedr site, I attempted to rename one of my files using special characters like `<`, `>`, `%`, `&`, and `^`. This caused the site to throw an error message: **"Illegal characters used in filename"** error.
+**December 1, 2020** While browsing the seedr site, I attempted to rename one of my files using special characters like `<`, `>`, `%`, `&`, and `^`. This caused the site to throw an error message: **"Illegal characters used in filename"**.
 
 ![IMAGE](https://assets.hemantapkh.com/blog/seedr-xss/seedr-error-alert.png)
 
