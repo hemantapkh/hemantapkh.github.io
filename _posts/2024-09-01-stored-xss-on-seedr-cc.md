@@ -33,12 +33,11 @@ In this post, we'll focus on my discovery of a stored Self-XSS vulnerability in 
 
 ## Discovering XSS in Seedr
 
-**December 1, 2020** I was exploring the site. Out of curiosity, I attempted to rename one of my files using characters such as `<`, `>`, `%`, `&`, and `^`, which are typically not allowed in filenames on most sites. The site threw an **"Illegal characters used in filename"** error.
+**December 1, 2020** While browsing the seedr site, I attempted to rename one of my files using special characters like `<`, `>`, `%`, `&`, and `^`. This caused the site to throw an error message: **"Illegal characters used in filename"** error.
 
 ![IMAGE](https://assets.hemantapkh.com/blog/seedr-xss/seedr-error-alert.png)
 
-This got me thinking: 
-what if the torrent file itself has these forbidden characters? So, I decided to test this out by creating a magnet link with such characters. 
+This got me thinking 🤔: what if the torrent file itself has these forbidden characters? So, I decided to test this out by creating a magnet link with such characters. 
 
 The basic structure of a torrent [magnet URI](https://en.wikipedia.org/wiki/Magnet_URI_scheme) is as follows:
 
