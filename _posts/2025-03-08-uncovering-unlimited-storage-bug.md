@@ -9,7 +9,8 @@ pin: false
 math: false
 mermaid: false
 image:
-  path: https://assets.hemantapkh.com/blog/seedr-storage-bug/thumbnail.png
+  path: https://assets.hemantapkh.com/blog/seedr-storage-bug/thumbnail.webp
+  alt: Image generated with DALL-E 3
 ---
 
 **July 2022** While working on my open-source project, [seedrcc](https://github.com/hemantapkh/seedrcc), a Python package for interacting with [Seedr’s](https://www.seedr.cc) API, I stumbled upon a critical bug that earned me my first bug bounty.

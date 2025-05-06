@@ -10,7 +10,7 @@ math: false
 mermaid: false
 image:
   path: https://assets.hemantapkh.com/blog/seedr-xss/thumbnail.webp
-  alt: Image from blog.detectify.com
+  alt: Image generated with DALL-E 3
 ---
 
 ## What is XSS?

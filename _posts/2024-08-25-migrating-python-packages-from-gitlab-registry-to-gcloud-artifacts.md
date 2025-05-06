@@ -9,7 +9,7 @@ pin: false
 math: false
 mermaid: false
 image:
-  path: https://assets.hemantapkh.com/blog/migrating-python-packages-from-gitlab-to-gcloud/thumbnail.png
+  path: https://assets.hemantapkh.com/blog/migrating-python-packages-from-gitlab-to-gcloud/thumbnail.webp
 ---
 
 

@@ -9,7 +9,7 @@ pin: false
 math: false
 mermaid: false
 image:
-  path: https://assets.hemantapkh.com/blog/enriching-controller-logs/thumbnail.png
+  path: https://assets.hemantapkh.com/blog/enriching-controller-logs/thumbnail.webp
   alt: Image generated with DALL-E 3
 ---
 
